@@ -29,30 +29,28 @@
 
 }    
 
-body {
-
-    
-    
-}
 
 .page {
     
     max-width: 39.0rem;
+
+    margin: 0 auto;
     
 }
 
 
 header {
-
+    
     background-color: var(--hd-primary) ;
-
+    
     font-size: var(--fs-heading);
     font-weight: 400;
     text-align: center;
     
     padding-bottom: 3.0rem;
-
     
+    
+    animation: left-right 1000ms;
 }
 
 header .logo {
@@ -73,22 +71,23 @@ header h1 {
     
     text-shadow: 0px 2px 2px var(--fc-shadow);
     
-
+    
     letter-spacing: 0.05rem;
 
     font-size: 4.0rem;
     
-
+    
 }
 
 
 main {
-
-    font-family: var(--ff-texting);
-
-    background-color: var(--bg-primary);
-
     
+    font-family: var(--ff-texting);
+    
+    background-color: var(--bg-primary);
+    
+    
+    animation: right-left 1500ms;
 }
 
 main p {
@@ -115,12 +114,14 @@ main p {
     
     
     position: relative; 
+    justify-content: center;
     
     
     padding-bottom: 3.2rem;
     
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+
+    animation: downtop 2000ms;
 
 }
 
@@ -136,7 +137,7 @@ main p {
 .class h2 {
     
     position: absolute;
-    right: 1.6rem;
+    right: 5.0rem;
     top: 1.6rem;
     
     font-style: normal;
@@ -159,8 +160,59 @@ main p {
 
     border-radius: 20px;
 
+}
 
+@keyframes left-right {
 
-    
+    0% {
+
+        opacity: 0;
+        transform: translateX(-20px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: rotateX(0px);
+
+    }
 
 }
+
+@keyframes right-left {
+
+    0% {
+
+        opacity: 0;
+        transform: translateX(20px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: rotateX(0px);
+
+    }
+
+}
+
+@keyframes downtop {
+
+    0% {
+
+        opacity:0;
+        transform: translateY(20px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: rotateY(0px);
+
+    }
+
+}
+
