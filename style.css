@@ -152,6 +152,28 @@ main {
     
 }
 
+@media (min-width: 700px) {
+
+    .page {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        
+    }
+
+    .cards {
+       
+    }
+
+}
+
 @keyframes left-right {
 
     0% {
