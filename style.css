@@ -135,7 +135,7 @@ main {
 }
 
 footer {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 900px) {
@@ -151,6 +151,7 @@ footer {
 
   .text-desktop {
     display: block;
+    text-align: center;
     font-family: var(--ff-page-text);
     padding: 0rem 5.2rem;
 
@@ -207,24 +208,23 @@ footer {
   }
   .cards div:nth-child(6) {
     grid-area: E;
-}
+  }
 
-footer {
+  footer {
     display: block;
-  margin-top: 2rem;
-  margin-bottom: 6.0rem;
-  font-size: 1.4rem;
-}
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    font-size: 1.4rem;
+  }
 
-a {
-  font-family: var(--ff-footer);
-  font-weight: bold;
+  a {
+    font-family: var(--ff-footer);
+    font-weight: bold;
 
-  text-decoration: none;
-  color: #4a4e69;
+    text-decoration: none;
+    color: #4a4e69;
+  }
 }
-}
-
 
 @keyframes left-right {
   0% {
